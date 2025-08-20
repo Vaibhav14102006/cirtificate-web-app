@@ -1,0 +1,117 @@
+// Demo data for certificate management system
+export const demoUsers = [
+  {
+    id: 1,
+    email: "student@amity.edu",
+    password: "password123",
+    role: "student",
+    name: "John Doe",
+    department: "Computer Science",
+    studentId: "AMU2024001",
+    phone: "+91 9876543210",
+    avatar: "/student-avatar.png",
+  },
+  {
+    id: 2,
+    email: "faculty@amity.edu",
+    password: "password123",
+    role: "faculty",
+    name: "Dr. Jane Smith",
+    department: "Computer Science",
+    employeeId: "FAC001",
+    phone: "+91 9876543211",
+  },
+  {
+    id: 3,
+    email: "admin@amity.edu",
+    password: "password123",
+    role: "admin",
+    name: "Admin User",
+    department: "Administration",
+    employeeId: "ADM001",
+    phone: "+91 9876543212",
+  },
+]
+
+export const demoCertificateRequests = [
+  {
+    id: 1,
+    studentId: 1,
+    studentName: "John Doe",
+    studentEmail: "student@amity.edu",
+    certificateType: "Course Completion",
+    courseName: "Advanced Web Development",
+    requestDate: "2024-01-15",
+    status: "pending",
+    department: "Computer Science",
+    semester: "Fall 2023",
+    grade: "A+",
+    comments: "",
+  },
+  {
+    id: 2,
+    studentId: 1,
+    studentName: "John Doe",
+    studentEmail: "student@amity.edu",
+    certificateType: "Internship",
+    courseName: "Software Development Internship",
+    requestDate: "2024-01-10",
+    status: "approved",
+    department: "Computer Science",
+    semester: "Summer 2023",
+    grade: "Excellent",
+    comments: "Outstanding performance during internship",
+  },
+  {
+    id: 3,
+    studentId: 1,
+    studentName: "John Doe",
+    studentEmail: "student@amity.edu",
+    certificateType: "Event Participation",
+    courseName: "Tech Symposium 2023",
+    requestDate: "2024-01-05",
+    status: "issued",
+    department: "Computer Science",
+    semester: "Fall 2023",
+    grade: "Participated",
+    comments: "Active participation in technical presentations",
+  },
+]
+
+export const demoIssuedCertificates = [
+  {
+    id: "CERT-2024-001",
+    studentId: 1,
+    studentName: "John Doe",
+    certificateType: "Event Participation",
+    courseName: "Tech Symposium 2023",
+    issueDate: "2024-01-20",
+    verificationCode: "AMU-CERT-001-2024",
+    qrCode:
+      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    department: "Computer Science",
+    grade: "Participated",
+    validUntil: "2029-01-20",
+  },
+]
+
+export const demoAnalytics = {
+  totalStudents: 1250,
+  totalRequests: 89,
+  pendingRequests: 23,
+  issuedCertificates: 156,
+  monthlyRequests: [
+    { month: "Jan", requests: 45, issued: 38 },
+    { month: "Feb", requests: 52, issued: 41 },
+    { month: "Mar", requests: 38, issued: 35 },
+    { month: "Apr", requests: 61, issued: 48 },
+    { month: "May", requests: 44, issued: 39 },
+    { month: "Jun", requests: 55, issued: 42 },
+  ],
+  departmentStats: [
+    { department: "Computer Science", requests: 89, issued: 67 },
+    { department: "Business", requests: 76, issued: 58 },
+    { department: "Engineering", requests: 65, issued: 52 },
+    { department: "Arts", requests: 43, issued: 31 },
+  ],
+}
